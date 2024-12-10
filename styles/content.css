@@ -53,3 +53,13 @@
 .example__img-container:hover .example__title {
   display: block;
 }
+
+/* FORM PART */
+.forms {
+  margin-bottom: 50px;
+}
+
+/* ADDITIONALLY PART */
+.additionally {
+  margin-bottom: 50px;
+}
