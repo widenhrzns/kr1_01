@@ -1,0 +1,31 @@
+/* HEADER */
+.header {
+  border-bottom: 1px solid #000;
+  margin-bottom: 20px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 860px;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.header__menu {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.menu__item {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.menu__item_active {
+  background: #e3e3e3;
+}

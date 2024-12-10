@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/objects.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/content.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__logo"><a href="../index.html">KR1_01</a></div>
+        <nav>
+          <ul class="header__menu">
+            <li>
+              <a href="../index.html" class="menu__item">Главная</a>
+            </li>
+            <li>
+              <a href="./tables.html" class="menu__item">Таблицы</a>
+            </li>
+            <li>
+              <a href="./form.html" class="menu__item menu__item_active"
+                >Форма</a
+              >
+            </li>
+            <li>
+              <a href="./userData.html" class="menu__item">Контактные данные</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="main__wrapper">
+        <form
+          action="https://www.bing.com/search?"
+          id="UserEnter"
+          name="UserEnter"
+          target="_blank"
+        >
+          <input type="hidden" name="q" value="search" />
+          <div>
+            <label for="name">Имя проверяюшего:</label>
+            <input type="text" id="name" name="name" value="-" />
+          </div>
+          <div>
+            <label for="mark">Оценка:</label>
+            <input
+              type="number"
+              id="mark"
+              name="mark"
+              min="1"
+              max="10"
+              value="5"
+            />
+          </div>
+          <div>
+            <label>Результат проверки:</label>
+            <input type="radio" id="pass" name="result" value="pass" checked />
+            <label for="male">Пройдено</label>
+            <input type="radio" id="fail" name="result" value="fail" />
+            <label for="female">Не пройдено</label>
+          </div>
+          <div>
+            <label for="comments">Добавить комментарий:</label>
+            <input type="checkbox" id="comments" name="comments" value="yes" />
+            <label for="comments">Есть комментарии к работе</label>
+          </div>
+          <div>
+            <label for="check_date">Дата проверки:</label>
+            <input
+              type="date"
+              id="check_date"
+              name="check_date"
+              value="2000-10-01"
+            />
+          </div>
+          <div>
+            <label for="password">Код подтверждения:</label>
+            <input type="password" id="password" name="password" value="-" />
+          </div>
+          <button type="submit">ОТПРАВИТЬ</button>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

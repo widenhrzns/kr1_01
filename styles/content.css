@@ -1,0 +1,55 @@
+/* PAGE NAVIGATION */
+.page-navigation {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #585858;
+  background-color: #e3e3e3;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.page-navigation__menu {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  text-decoration: underline;
+}
+
+/* NAVIGATION PART */
+.navigation-part {
+  margin-bottom: 50px;
+}
+
+/* INFORMATION PAGES PART */
+.example__list {
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.information-pages {
+  margin-bottom: 50px;
+}
+
+.example__img-container {
+  position: relative;
+}
+
+.example__img {
+  width: 100px;
+}
+
+.example__title {
+  display: none;
+  position: absolute;
+  margin: -40px 0 0 100px;
+}
+
+.example__img-container:hover .example__title {
+  display: block;
+}
